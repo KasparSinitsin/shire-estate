@@ -1,76 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shire Estate</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            beige: '#D6CFC1',
-            yellow: '#FDC363',
-            lightGreen: '#A7C957',
-            forestGreen: '#81B29A',
-            hGreen: '#3A332E',
-            textBrown: '#4F3527',
-            accentOrange: '#E76F51',
-            accentYellow: '#F4A261',
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shire Estate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beige: "#D6CFC1",
+              yellow: "#FDC363",
+              lightGreen: "#A7C957",
+              forestGreen: "#81B29A",
+              hGreen: "#3A332E",
+              textBrown: "#4F3527",
+              accentOrange: "#E76F51",
+              accentYellow: "#F4A261",
+            },
+            fontFamily: {
+              tangerine: ["Tangerine", "serif"],
+              garamond: ["EB Garamond", "normal"],
+            },
           },
-          fontFamily: {
-            tangerine: ['Tangerine', 'serif'],
-            garamond: ['EB Garamond', 'normal'],
-          },  
         },
-      },
-    };
-  </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Tangerine:wght@400;700&display=swap');
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Tangerine:wght@400;700&display=swap");
     </style>
-</head>
-<body class="bg-[url('./img/bg.jpg')] bg-cover bg-bottom bg-no-repeat bg-beige min-h-screen">
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2191fb3337.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-[url('./img/bg.jpg')] bg-cover bg-bottom bg-no-repeat bg-beige min-h-screen"
+  >
     <header class="bg-beige bg-opacity-70">
-        <nav class="relative flex w-full flex-wrap items-center justify-between py-2 lg:py-4">
-          <div class="flex w-full items-center justify-between px-3">
+      <nav
+        class="relative flex w-full flex-wrap items-center justify-between py-2 lg:py-4"
+      >
+        <div class="flex w-full items-center justify-between px-3">
+          <!-- Logo -->
+          <div class="mr-6 flex items-center">
             <!-- Logo -->
-            <div class="mr-6 flex items-center">
-                <!-- Logo -->
-                <a class="mx-1 flex items-center" href="#">
-                  <img src="./img/logo.png" style="height: 100px" alt="Logo" />
-                </a>
-              </div>
-            
-            <!-- Navbar Links -->
-            <div class="flex items-center space-x-6">
-              <ul class="flex space-x-4 text-center lg:flex-row">
-                <li>
-                  <a href="#"></a>
-                </li>
-                <li>
-                  <a href="#"></a>
-                </li>
-                <li>
-                  <a href="#"></a>
-                </li>
-              </ul>
-            </div>
+            <a class="mx-1 flex items-center" href="#">
+              <img src="./img/logo.png" style="height: 100px" alt="Logo" />
+            </a>
           </div>
-        </nav>
-        </header>
-      
-      <main class="container mx-auto">
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+
+          <!-- Navbar Links -->
+          <div class="flex items-center space-x-6">
+            <ul class="flex space-x-4 text-center lg:flex-row">
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto">
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
     </main>
-<footer class="bg-beige bg-opacity-70">
-</footer>
-</body>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="logo">
+        <h1 class="logo-heading">Dwella</h1>
+        <p class="logo-paragraph">
+          Bringing you closer to your dream home, one click at a time.
+        </p>
+      </div>
+      <div class="about">
+        <h4 class="about-heading">About</h4>
+        <a href="#" class="about-link">Our Story</a>
+        <a href="#" class="about-link">Courses</a>
+        <a href="#" class="about-link">Our Team</a>
+        <a href="#" class="about-link">Resources</a>
+      </div>
+      <div class="support">
+        <h4 class="about-heading">Support</h4>
+        <a href="#" class="about-link">FAQ</a>
+        <a href="#" class="about-link">Contact Us</a>
+        <a href="#" class="about-link">Help Center</a>
+        <a href="#" class="about-link">Terms of Service</a>
+      </div>
+      <div class="find-us">
+        <h4 class="about-heading">Find Us</h4>
+        <a href="#" class="about-link">Events</a>
+        <a href="#" class="about-link">Locations</a>
+        <a href="#" class="about-link">Newsletter</a>
+      </div>
+      <div class="social">
+        <h4 class="about-heading">Our Social</h4>
+        <a href="#" class="about-link"
+          ><i class="fa-brands fa-instagram"></i>Instagram</a
+        >
+        <a href="#" class="about-link"
+          ><i class="fa-brands fa-facebook"></i>Facebook</a
+        >
+        <a href="#" class="about-link"
+          ><i class="fa-brands fa-x-twitter"></i>Twitter (x)</a
+        >
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
 </html>
