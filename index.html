@@ -5,16 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shire Estate</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            beige: '#D6CFC1',
+            yellow: '#FDC363',
+            lightGreen: '#A7C957',
+            forestGreen: '#81B29A',
+            hGreen: '#3A332E',
+            textBrown: '#4F3527',
+            accentOrange: '#E76F51',
+            accentYellow: '#F4A261',
+          },
+          fontFamily: {
+            tangerine: ['Tangerine', 'serif'],
+            garamond: ['EB Garamond', 'normal'],
+          },  
+        },
+      },
+    };
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Tangerine:wght@400;700&display=swap');
+    </style>
 </head>
-<body>
-    <header>
+<body class="bg-[url('./img/bg.jpg')] bg-cover bg-bottom bg-no-repeat bg-beige min-h-screen">
+    <header class="bg-beige bg-opacity-70">
         <nav class="relative flex w-full flex-wrap items-center justify-between py-2 lg:py-4">
           <div class="flex w-full items-center justify-between px-3">
             <!-- Logo -->
             <div class="mr-6 flex items-center">
                 <!-- Logo -->
-                <a class="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="#">
-                  <img src="./img/logo.jpg" style="height: 70px" alt="Logo" />
+                <a class="mx-1 flex items-center" href="#">
+                  <img src="./img/logo.png" style="height: 100px" alt="Logo" />
                 </a>
               </div>
             
@@ -34,6 +59,7 @@
             </div>
           </div>
         </nav>
+        </header>
       
       <main class="container mx-auto">
         <section></section>
@@ -44,7 +70,7 @@
         <section></section>
         <section></section>
     </main>
-<footer>
+<footer class="bg-beige bg-opacity-70">
 </footer>
 </body>
 </html>
