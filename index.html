@@ -38,38 +38,44 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body
     class="bg-[url('./img/bg.jpg')] bg-cover bg-bottom bg-no-repeat bg-beige min-h-screen"
   >
     <header class="bg-beige bg-opacity-70">
-      <nav
-        class="relative flex w-full flex-wrap items-center justify-between py-2 lg:py-4"
-      >
-        <div class="flex w-full items-center justify-between px-3">
-          <!-- Logo -->
-          <div class="mr-6 flex items-center">
-            <!-- Logo -->
-            <a class="mx-1 flex items-center" href="#">
-              <img src="./img/logo.png" style="height: 100px" alt="Logo" />
-            </a>
+      <!-- navbar -->
+      <nav class="navigation">
+        <img src="./img/logo.png" alt="Logo" class="navigation-header" />
+        <ul class="navigation-links">
+          <div class="navigation-links-container">
+            <li class="navigation-item">
+              <a class="link-item" href="#home">Home</a>
+            </li>
+            <li class="navigation-item">
+              <a class="link-item" href="#services">Services</a>
+            </li>
+            <li class="navigation-item">
+              <a class="link-item" href="#agents">Agents</a>
+            </li>
+            <li class="navigation-item">
+              <a class="link-item" href="#contact">Contact</a>
+            </li>
           </div>
+          <div class="navigation-wrapper">
+            <button class="navigation-search">
+              <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+              <i class="fa-solid fa-magnifying-glass navigation-icon"></i>
+            </button>
 
-          <!-- Navbar Links -->
-          <div class="flex items-center space-x-6">
-            <ul class="flex space-x-4 text-center lg:flex-row">
-              <li>
-                <a href="#"></a>
-              </li>
-              <li>
-                <a href="#"></a>
-              </li>
-              <li>
-                <a href="#"></a>
-              </li>
-            </ul>
+            <button class="navigation-profile">
+              <i class="fa-solid fa-user navigation-icon"></i>
+            </button>
+
+            <button class="navigation-signup">Sign up</button>
           </div>
-        </div>
+        </ul>
       </nav>
+      <!-- end of navbar -->
     </header>
 
     <main class="container mx-auto">

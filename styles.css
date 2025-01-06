@@ -1,3 +1,100 @@
+/* navigation */
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 9vh;
+  background-color: #dcb9a3;
+}
+.navigation-header {
+  margin-left: 5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  height: 100px
+}
+.navigation-links {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  /* border: 1px solid red; */
+  justify-content: end;
+}
+
+.navigation-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 5px solid green; */
+}
+.link-item {
+  font-size: 1.7rem;
+  margin-left: 5rem;
+  color: #2a1b12;
+}
+
+.link-item:hover {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.navigation-wrapper {
+  /* border: 3px solid blue; */
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.navigation-search {
+  margin-left: 3rem;
+  border: none;
+
+  background-color: #dcb9a3;
+}
+.navigation-icon {
+  font-size: 2rem;
+  background-color: #dcb9a3;
+  color: #2a1b12;
+}
+
+.navigation-icon:hover {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.navigation-profile {
+  margin-left: 1.5rem;
+  border: none;
+  background-color: #dcb9a3;
+}
+
+.navigation-profile:hover {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.navigation-signup {
+  width: 50%;
+  height: 3.2rem;
+  background-color: #2a1b12;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 2.5rem;
+}
+
+.navigation-signup:hover {
+  font-size: 1.5rem;
+  background-color: #dcb9a3;
+  border: 2px solid #2a1b12;
+  color: #2a1b12;
+}
+
+/* end of navigation */
+
 /* about */
 
 .section-about {
@@ -57,7 +154,7 @@
   justify-content: start;
   flex-direction: row;
   margin-left: 0.7rem;
-  top: 31rem;
+  top: 27rem;
   position: absolute;
 }
 
@@ -112,7 +209,7 @@
   justify-content: start;
   flex-direction: row;
   margin-left: 0.7rem;
-  top: 35rem;
+  top: 32rem;
   position: absolute;
   padding: 1rem;
   border-radius: 0 0 2rem 2rem;
