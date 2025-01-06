@@ -1,3 +1,115 @@
+/* question */
+.section-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+  margin-bottom: 12rem;
+}
+
+.section-question-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #2a1b12;
+}
+.section-about-subheading {
+}
+
+.section-question-subheading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #2a1b12;
+  margin-top: 0.6rem;
+}
+
+.section-question-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.section-question-icons-element {
+  font-size: 1.7rem;
+  color: #2a1b12;
+  font-weight: 800;
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+.question-icon {
+  margin-right: 0.4rem;
+}
+
+.section-question-icons-paragraph {
+  font-size: 1.2rem;
+  color: #2a1b12;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-question-input-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+.section-question-button:hover {
+  font-size: 1.5rem;
+  background-color: #dcb9a3;
+  border: 2px solid #2a1b12;
+  color: #2a1b12;
+}
+.question-icon {
+  font-size: 1.5rem;
+  padding-right: 0.4rem;
+}
+
+.question-icon-envelope {
+  font-size: 2rem;
+  position: absolute;
+  left: 0.8rem;
+  top: 1rem;
+}
+.section-question-input {
+  width: 100%;
+  height: 3.5rem;
+  border: 1px solid #2a1b12;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #dcb9a3;
+  background-color: #ddc7bb;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.section-question-input::placeholder {
+  font-size: 1.8rem;
+  color: #2a1b12;
+  font-weight: 400;
+  text-align: center;
+}
+
+.section-question-button {
+  width: 50%;
+  height: 3.2rem;
+  background-color: #2a1b12;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+/* end of question */
+
 /* footer */
 .footer {
   /* border: 1px solid red; */
