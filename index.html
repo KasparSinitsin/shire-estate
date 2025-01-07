@@ -44,34 +44,56 @@
   >
     <header class="bg-beige bg-opacity-70">
       <!-- navbar -->
-      <nav class="navigation">
-        <img src="./img/logo.png" alt="Logo" class="navigation-header" />
-        <ul class="navigation-links">
-          <div class="navigation-links-container">
-            <li class="navigation-item">
-              <a class="link-item" href="#home">Home</a>
+      <nav class="flex w-full justify-around items-center bg-hGreen">
+        <img
+          src="./img/logo.png"
+          class="ml-2.5 text-5xl font-bold w-12 h-12"
+          alt="Logo"
+        />
+        <ul class="flex flex-row justify-end">
+          <div class="flex items-center justify-between">
+            <li class="mx-10 text-lg text-beige hover:text-xl hover:-tracking-wide">
+              <a class="text-lg text-beige" href="#home">Home</a>
             </li>
-            <li class="navigation-item">
-              <a class="link-item" href="#services">Services</a>
+
+            <li
+              class="text-lg mx-10 text-beige hover:text-xl hover:-tracking-wide"
+            >
+              <a class="text-lg text-beige" href="#services">Services</a>
             </li>
-            <li class="navigation-item">
-              <a class="link-item" href="#agents">Agents</a>
+
+            <li
+              class="text-lg mx-10 text-beige hover:text-xl hover:-tracking-wide"
+            >
+              <a class="text-lg text-beige" href="#agents">Agents</a>
             </li>
-            <li class="navigation-item">
-              <a class="link-item" href="#contact">Contact</a>
+
+            <li
+              class="text-lg mx-10 text-beige hover:text-xl hover:-tracking-wide"
+            >
+              <a class="text-lg text-beige" href="#contact">Contact</a>
             </li>
           </div>
-          <div class="navigation-wrapper">
-            <button class="navigation-search">
+
+          <div class="flex w-4/12 flex-row items-center justify-around">
+            <button class="mx-1 border-none text-beige">
               <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
-              <i class="fa-solid fa-magnifying-glass navigation-icon"></i>
+              <i
+                class="fa-solid fa-magnifying-glass hover:text-3xl cursor-pointer"
+              ></i>
             </button>
 
-            <button class="navigation-profile">
-              <i class="fa-solid fa-user navigation-icon"></i>
+            <button
+              class="ml-10 border-none text-beige hover:text-3xl hover:cursor-pointer"
+            >
+              <i class="fa-solid fa-user over:text-3xl cursor-pointer"></i>
             </button>
 
-            <button class="navigation-signup">Sign up</button>
+            <button
+              class="w-3/6 h-12 text-beige text-white text-lg font-bold border-none rounded-lg ml-10 hover:text-xl hover:bg-beige hover:border-solid hover:text-stone-700"
+            >
+              Sign up
+            </button>
           </div>
         </ul>
       </nav>
