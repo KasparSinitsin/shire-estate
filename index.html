@@ -1,76 +1,280 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shire Estate</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            beige: '#D6CFC1',
-            yellow: '#FDC363',
-            lightGreen: '#A7C957',
-            forestGreen: '#81B29A',
-            hGreen: '#3A332E',
-            textBrown: '#4F3527',
-            accentOrange: '#E76F51',
-            accentYellow: '#F4A261',
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shire Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beige: "#D6CFC1",
+              yellow: "#FDC363",
+              lightGreen: "#A7C957",
+              forestGreen: "#81B29A",
+              hGreen: "#3A332E",
+              textBrown: "#4F3527",
+              accentOrange: "#E76F51",
+              accentYellow: "#F4A261",
+            },
+            fontFamily: {
+              tangerine: ["Tangerine", "serif"],
+              garamond: ["EB Garamond", "normal"],
+            },
           },
-          fontFamily: {
-            tangerine: ['Tangerine', 'serif'],
-            garamond: ['EB Garamond', 'normal'],
-          },  
         },
-      },
-    };
-  </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Tangerine:wght@400;700&display=swap');
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Tangerine:wght@400;700&display=swap");
     </style>
-</head>
-<body class="bg-[url('./img/bg.jpg')] bg-cover bg-bottom bg-no-repeat bg-beige min-h-screen">
+  </head>
+  <body
+    class="bg-[url('./img/bg.jpg')] bg-cover bg-bottom bg-no-repeat bg-beige min-h-screen"
+  >
     <header class="bg-beige bg-opacity-70">
-        <nav class="relative flex w-full flex-wrap items-center justify-between py-2 lg:py-4">
-          <div class="flex w-full items-center justify-between px-3">
+      <nav
+        class="relative flex w-full flex-wrap items-center justify-between py-2 lg:py-4"
+      >
+        <div class="flex w-full items-center justify-between px-3">
+          <!-- Logo -->
+          <div class="mr-6 flex items-center">
             <!-- Logo -->
-            <div class="mr-6 flex items-center">
-                <!-- Logo -->
-                <a class="mx-1 flex items-center" href="#">
-                  <img src="./img/logo.png" style="height: 100px" alt="Logo" />
-                </a>
+            <a class="mx-1 flex items-center" href="#">
+              <img src="./img/logo.png" style="height: 100px" alt="Logo" />
+            </a>
+          </div>
+
+          <!-- Navbar Links -->
+          <div class="flex items-center space-x-6">
+            <ul class="flex space-x-4 text-center lg:flex-row">
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto">
+      <section></section>
+      <section></section>
+      <section></section>
+
+      <!--Kels-->
+      <section
+        class="min-h-screen flex flex-col items-center justify-center py-6"
+      >
+        <!-- Heading -->
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-green-700 mb-6"
+        >
+          Why Choose Us
+        </h2>
+
+        <!-- Subheading text -->
+        <p
+          class="text-lg sm:text-xl md:text-2xl text-textBrown text-center mb-12 max-w-3xl rounded-lg bg-beige/50 px-4"
+        >
+          At Shire Estate Company, we offer beautifully crafted hobbit houses
+          inspired by the charm and magic of the Shire. Whether you're seeking a
+          peaceful retreat or a unique home, our hobbit houses provide an
+          extraordinary living experience.
+        </p>
+
+        <!-- Four Boxes -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto px-4"
+        >
+          <!-- Box 1 -->
+          <div
+            class="bg-beige/50 p-6 rounded-lg shadow-lg text-center transform hover:scale-110 transition-transform duration-300 ease-in-out"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-4">
+              Unique Design
+            </h3>
+            <p class="text-textBrown">
+              Our hobbit houses feature whimsical designs, blending rustic charm
+              with modern comforts, inspired by the peaceful Shire.
+            </p>
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="bg-beige/50 p-6 rounded-lg shadow-lg text-center transform hover:scale-110 transition-transform duration-300 ease-in-out"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-4">
+              Eco-Friendly
+            </h3>
+            <p class="text-textBrown">
+              Built with eco-friendly materials, our hobbit houses are
+              energy-efficient and sustainable, allowing you to live a greener
+              lifestyle.
+            </p>
+          </div>
+
+          <!-- Box 3 -->
+          <div
+            class="bg-beige/50 p-6 rounded-lg shadow-lg text-center transform hover:scale-110 transition-transform duration-300 ease-in-out"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-4">
+              Cozy & Comfortable
+            </h3>
+            <p class="text-textBrown">
+              Our homes offer the perfect balance of comfort and coziness,
+              making them ideal for a peaceful retreat or a long-term residence.
+            </p>
+          </div>
+
+          <!-- Box 4 -->
+          <div
+            class="bg-beige/50 p-6 rounded-lg shadow-lg text-center transform hover:scale-110 transition-transform duration-300 ease-in-out"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-4">
+              A Magical Experience
+            </h3>
+            <p class="text-textBrown">
+              Living in a hobbit house isn’t just about having a home—it’s about
+              embracing a magical, fairytale lifestyle in the heart of nature.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Second Section: Our Popular Residences -->
+      <section
+        class="min-h-screen flex flex-col items-center justify-center py-6"
+      >
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-green-700 mb-6"
+        >
+          Our Popular Residences
+        </h2>
+
+        <!-- (Grid layout) -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto px-4"
+        >
+          <!-- Residence 1 -->
+          <div
+            class="bg-beige p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="w-full h-64 object-cover rounded-md mb-4"
+              src="img/House1.jpg"
+              alt="Hobbit House 1"
+            />
+            <h3 class="text-xl font-semibold text-green-700 mb-2">
+              The Greenhill Villa
+            </h3>
+            <div class="flex items-center text-textBrown mb-2">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              <span>Shire Valley</span>
+            </div>
+            <div class="flex items-center text-textBrown mb-2">
+              <i class="fas fa-arrows-alt mr-2"></i>
+              <span>850 sq ft</span>
+              <div class="ml-4 flex items-center">
+                <i class="fas fa-bed mr-2"></i>
+                <span>3 rooms</span>
               </div>
-            
-            <!-- Navbar Links -->
-            <div class="flex items-center space-x-6">
-              <ul class="flex space-x-4 text-center lg:flex-row">
-                <li>
-                  <a href="#"></a>
-                </li>
-                <li>
-                  <a href="#"></a>
-                </li>
-                <li>
-                  <a href="#"></a>
-                </li>
-              </ul>
+            </div>
+            <div class="flex items-center justify-between mb-4 py-5">
+              <button class="bg-accentOrange text-white py-2 px-4 rounded-full">
+                More Info
+              </button>
+              <span class="text-textBrown font-bold"
+                ><i class="fas fa-dollar-sign mr-2"></i> $250,000</span
+              >
             </div>
           </div>
-        </nav>
-        </header>
-      
-      <main class="container mx-auto">
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+
+          <!-- Residence 2 -->
+          <div
+            class="bg-beige p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="w-full h-64 object-cover rounded-md mb-4"
+              src="img/House2.jpg"
+              alt="Hobbit House 2"
+            />
+            <h3 class="text-xl font-semibold text-green-700 mb-2">
+              The Oakwood Retreat
+            </h3>
+            <div class="flex items-center text-textBrown mb-2">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              <span>Rivendell Forest</span>
+            </div>
+            <div class="flex items-center text-textBrown mb-2">
+              <i class="fas fa-arrows-alt mr-2"></i>
+              <span>1,100 sq ft</span>
+              <div class="ml-4 flex items-center">
+                <i class="fas fa-bed mr-2"></i>
+                <span>4 rooms</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-4 py-5">
+              <button class="bg-accentOrange text-white py-2 px-4 rounded-full">
+                More Info
+              </button>
+              <span class="text-textBrown font-bold"
+                ><i class="fas fa-dollar-sign mr-2"></i> $350,000</span
+              >
+            </div>
+          </div>
+
+          <!-- Residence 3 -->
+          <div
+            class="bg-beige p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="w-full h-64 object-cover rounded-md mb-4"
+              src="img/House3.jpg"
+              alt="Hobbit House 3"
+            />
+            <h3 class="text-xl font-semibold text-green-700 mb-2">
+              The Hobbiton Dwelling
+            </h3>
+            <div class="flex items-center text-textBrown mb-2">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              <span>Hobbiton Village</span>
+            </div>
+            <div class="flex items-center text-textBrown mb-2">
+              <i class="fas fa-arrows-alt mr-2"></i>
+              <span>950 sq ft</span>
+              <div class="ml-4 flex items-center">
+                <i class="fas fa-bed mr-2"></i>
+                <span>3 rooms</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-4 py-5">
+              <button class="bg-accentOrange text-white py-2 px-4 rounded-full">
+                More Info
+              </button>
+              <span class="text-textBrown font-bold"
+                ><i class="fas fa-dollar-sign mr-2"></i> $280,000</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Andrei-->
+      <section></section>
+      <section></section>
     </main>
-<footer class="bg-beige bg-opacity-70">
-</footer>
-</body>
+    <footer class="bg-beige bg-opacity-70"></footer>
+  </body>
 </html>
