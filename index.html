@@ -103,9 +103,116 @@
     </header>
 
     <main class="container mx-auto">
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="flex flex-col h-auto md:h-[576px] md:bg-[url('./img/hero2.jpg')] md:bg-cover md:bg-center md:rounded-md w-full md:w-auto">
+        <div class="relative bg-forestGreen bg-opacity-70 flex flex-col justify-center px-6 py-8 md:w-1/2 md:h-full">
+          <h1 class="font-tangerine font-bold text-3xl text-hGreen md:text-[4rem] tracking-wider leading-tight">
+            Find Your Perfect Hobbit Hole
+          </h1>
+          <p class="font-garamond text-base md:text-2xl text-textBrown mt-4 mx-4 tracking-wide">
+            Wander through our handpicked collection of enchanting hobbit homes, thoughtfully designed to match your vision of comfort and charm
+          </p>
+          <div class="flex justify-center">
+            <button class="bg-lightGreen hover:bg-accentOrange w-32 md:w-48 px-4 py-2 my-4 text-hGreen font-tangerine text-xl md:text-3xl md:mt-12 rounded-full">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <img
+          class="block md:hidden w-full h-[50vh] rounded-md object-cover"
+          src="./img/hero.jpeg"
+          alt="Hobbit house">
+      </section>
+
+      <section>
+        <div class="flex flex-col md:flex-row justify-around mx-auto w-[40rem] lg:w-[50rem] px-4 py-2 gap-4 bg-yellow font-garamond rounded-lg">
+        <div class="flex flex-col md:flex-row justify-around gap-2">
+        <button id="dropdownHoverButton1" data-dropdown-toggle="dropdownHover1" data-dropdown-trigger="hover" class="bg-white hover:bg-accentYellow text-2xl rounded-lg md:px-8 lg:px-10 py-2.5 pl-6 text-center inline-flex items-center" type="button">Location <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+          </button>            
+          <div id="dropdownHover1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+              <ul class="py-2 text-2xl text-textBrown font-garamond" aria-labelledby="dropdownHoverButton1">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">	The Shire</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Buckland</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bree-land</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rivendell</a>
+                </li>
+              </ul>
+          </div>
+
+          <button id="dropdownHoverButton2" data-dropdown-toggle="dropdownHover2" data-dropdown-trigger="hover" class="bg-white hover:bg-accentYellow rounded-lg text-2xl md:px-8 lg:px-10 py-2.5 pl-6 text-center inline-flex items-center" type="button">Type <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+            </button>  
+            <div id="dropdownHover2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                <ul class="py-2 text-2xl text-textBrown font-garamond" aria-labelledby="dropdownHoverButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Cozy Burrow</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Hillside Retreat</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Countryside Cottage</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Elegant Smial</a>
+                  </li>
+                </ul>
+            </div>
+
+            <button id="dropdownHoverButton3" data-dropdown-toggle="dropdownHover3" data-dropdown-trigger="hover" class="bg-white hover:bg-accentYellow rounded-lg text-2xl md:px-8 lg:px-10 py-2.5 pl-6 text-center inline-flex items-center" type="button">Price Range <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg>
+              </button>
+              <div id="dropdownHover3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                  <ul class="py-2 text-2xl text-textBrown font-garamond" aria-labelledby="dropdownHoverButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Under 50,000</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100">50,000-100,000</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100">100,000-200,000</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Over 200,000</a>
+                    </li>
+                  </ul>
+              </div>  
+        </div>
+              <button class="bg-lightGreen hover:bg-accentOrange md:px-8 text-center lg:px-14 py-2.5 font-tangerine rounded-xl text-4xl">Search</button>
+            </div>          
+      </section>
+       <section class="flex flex-col md:flex-row justify-around gap-4 my-24">
+      <img class="w-full md:w-1/2 rounded-xl h-auto object-cover" src="./img/estate.jpeg" alt="hobbit estate on a hill">
+      <div class="flex flex-col justify-center gap-4 md:w-1/2 bg-beige/50 rounded-xl">
+      <h2 class="text-4xl md:text-8xl text-center text-green-700 font-tangerine font-bold pt-4">We Help You To Find Your Dream Home</h2>
+      <p class="text-lg md:text-2xl font-garamond text-textBrown px-8 pt-8">Whether it’s a cozy hillside burrow or a lush countryside retreat, we’re here to guide you on your journey to your dream hobbit home.</p>
+      <div class="flex flex-row justify-around gap-4 pt-8 px-8">
+      <div class="flex flex-col">
+      <h3 class="text-3xl md:text-6xl text-center font-garamond text-green-700">8,000</h3>
+      <p class="text-lg md:text-2xl text-center font-garamond text-textBrown">cozy burrows listed</p>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="text-3xl md:text-6xl text-center font-garamond text-green-700">6,000</h3>
+        <p class="text-lg md:text-2xl text-center font-garamond text-textBrown">homes found for happy hobbits</p>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="text-3xl md:text-6xl text-center font-garamond text-green-700">2,000</h3>
+          <p class="text-lg md:text-2xl text-center font-garamond text-textBrown">trusted agents</p>
+          </div>
+      </div>
+      </div>
+    </section>
       <section
         class="min-h-screen flex flex-col items-center justify-center py-6"
       >
